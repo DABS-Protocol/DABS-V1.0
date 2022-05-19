@@ -423,7 +423,7 @@ contract NestBatchMining is ChainConfig, NestFrequentlyUsed, INestBatchMining {
         uint takeNum, 
         uint newEquivalent
     ) external payable override {
-
+        /*
         Config memory config = _config;
 
         // 1. Check arguments
@@ -512,6 +512,7 @@ contract NestBatchMining is ChainConfig, NestFrequentlyUsed, INestBatchMining {
         // 6. Create price sheet
         emit Post(channelId, pairIndex, msg.sender, pair.sheets.length, needEthNum, newEquivalent);
         _create(pair.sheets, accountIndex, uint32(needEthNum), needNest1k, level << 8, newEquivalent);
+        */
     }
 
     /// @dev List sheets by page
@@ -833,7 +834,7 @@ contract NestBatchMining is ChainConfig, NestFrequentlyUsed, INestBatchMining {
 
     // Calculate price, average price and volatility
     function _stat(Config memory config, PricePair storage pair) private {
-        
+        /*
         PriceSheet[] storage sheets = pair.sheets;
         // Load token price information
         PriceInfo memory p0 = pair.price;
@@ -953,6 +954,7 @@ contract NestBatchMining is ChainConfig, NestFrequentlyUsed, INestBatchMining {
             p0.index = uint32(index);
             pair.price = p0;
         }
+        */
     }
 
     // Calculation number of blocks which mined
