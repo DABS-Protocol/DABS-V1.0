@@ -21,7 +21,7 @@ interface IDabsPlatform {
         uint16 channelId;
         // The pairIndex for call nest price
         uint16 pairIndex;
-        // Reward rate
+        // Reward rate, 10000 points system, 2000 means 20%
         uint16 stakingRewardRate;
         uint48 sigmaSQ;// = 102739726027;
         // Reserve token address
